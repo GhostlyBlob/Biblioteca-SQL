@@ -3,7 +3,7 @@ CREATE TABLE login (
     email    VARCHAR(250) NOT NULL UNIQUE,
     senha   VARCHAR(250) NOT NULL,
     nivel_acesso   INT NOT NULL CHECK (nivel_acesso >= 0 AND nivel_acesso <= 2)
-)
+);
 
 CREATE TABLE clientes (
     id  BIGSERIAL   PRIMARY KEY,
